@@ -7,14 +7,7 @@ namespace CodeKata.CategorizeNewMembers
     {
         public static IEnumerable<string> OpenOrSenior(int[][] data)
         {
-            List<string> result = new List<string>();
-
-            foreach (int[] element in data)
-            {
-                result.Add(IsSenior(element));
-            }
-
-            return result;
+            return data.Select(x => IsSenior(x)).ToList();
         }
 
         private static string IsSenior(int[] member)

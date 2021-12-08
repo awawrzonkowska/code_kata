@@ -5,6 +5,8 @@ using System.Linq;
 
 namespace CodeKata.ListFiltering
 {
+    //https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/csharp
+
     [TestFixture]
     public class ListFiltererTest
     {

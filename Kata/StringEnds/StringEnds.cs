@@ -45,7 +45,7 @@ namespace CodeKata.Kata.StringEnds
 
         public static bool StringEnds(string str, string ending)
         {
-            if (str.Contains(ending) && str.Length == str.IndexOf(ending) + ending.Length)
+            if (str.Contains(ending) && str.Length == str.LastIndexOf(ending) + ending.Length)
                 return true;
             
             return false;
